@@ -1,12 +1,10 @@
-import tkinter as tk
 from faq_data import FAQ_DB
 from config import Config
-from chatbot_app import FAQChatbotApp
+from chatbot_app import ChatbotApp
 
 def main():
-    root = tk.Tk()
-    app = FAQChatbotApp(root, FAQ_DB, Config)
-    root.mainloop()
+    app = ChatbotApp(FAQ_DB, Config)
+    app.start()
 
 if __name__ == "__main__":
     main()
