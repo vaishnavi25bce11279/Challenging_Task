@@ -254,7 +254,102 @@ Upon launching the application, users are presented with three primary options:
 3. Confirm application terminates
 
 **Expected Result:** Application exits cleanly with farewell message
+### Integration Testing
 
-**Last Updated:** November 2025
+**Test Module Interactions:**
+1. Verify faq_data.py successfully loads into chat_manager.py
+2. Confirm config.py constants are accessible throughout application
+3. Test ui_components.py display methods with various inputs
+4. Verify chatbot_app.py correctly orchestrates all modules
 
-**Documentation Version:** 1.0.0
+### Performance Testing
+
+**Response Time:**
+- Verify menu displays instantly
+- Confirm search results appear within 1 second
+- Test with maximum FAQ entries
+
+**Memory Usage:**
+- Monitor application memory footprint (should remain under 50MB)
+- Verify no memory leaks during extended usage
+
+## Troubleshooting
+
+### Common Issues and Solutions
+
+**Issue:** ModuleNotFoundError when running final.py
+
+**Solution:** Ensure all six Python files are in the same directory
+
+---
+
+**Issue:** NameError: 'ChatManager' is not defined
+
+**Solution:** Add imports at the top of chatbot_app.py:
+```python
+from chat_manager import ChatManager
+from ui_components import DisplayManager
+```
+
+---
+
+**Issue:** NameError: 'ChatbotApp' is not defined
+
+**Solution:** Add imports at the top of final.py:
+```python
+from faq_data import FAQ_DB
+from config import Config
+from chatbot_app import ChatbotApp
+```
+
+---
+
+**Issue:** Screen does not clear properly
+
+**Solution:** This is OS-dependent behavior and does not affect functionality
+## Limitations
+
+- Only addresses questions present in the FAQ database (no web search/NLP yet).
+- No persistent chat history or user context—stateless per session.
+- Console-only; no web or GUI interface.
+- Matches strictly by supplied keywords, not full sentence understanding.
+
+## Future Enhancements
+
+Potential improvements for future versions:
+
+1. JSON-based FAQ storage for easier content updates
+2. Colored terminal output for improved readability
+3. Export functionality to save answers to text files
+4. User feedback mechanism for FAQ improvement
+5. Multi-language support
+6. Web-based GUI interface option
+7. FAQ contribution system for community input
+
+## Project Metadata
+
+| Attribute | Details |
+|-----------|---------|
+| Project Type | Educational Python Application |
+| Architecture | Modular Command-Line Interface |
+| Code Complexity | Beginner to Intermediate |
+| Lines of Code | Approximately 400 lines |
+| Number of Modules | 6 Python files |
+| Documentation | Complete inline and external documentation |
+
+
+## Version History
+
+**Version 1.0.0** (Current)
+- Initial release
+- 7 FAQ categories
+- 30+ questions and answers
+- Browse and search functionality
+- Modular architecture implementation
+
+---
+
+## Author
+Vaishnavi Asati
+BTech Computer Science(Core)
+VIT Bhopal
