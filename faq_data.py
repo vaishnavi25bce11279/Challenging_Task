@@ -1,4 +1,3 @@
-# faq_data.py-Database Module oof FAQs
 FAQ_DB = {
     "💻 Software Installation & Setup": {
         "How do I install Python on Windows/Mac/Linux?": 
@@ -102,26 +101,5 @@ FAQ_DB = {
         
         "How do I host a web-based Python project?": 
             "Free options:\n• Heroku: Flask/Django apps (needs Procfile)\n• PythonAnywhere: Direct Python hosting\n• Render: Modern alternative to Heroku\n• Vercel/Netlify: For frontend with Python backend\n• Streamlit Cloud: For data apps\nSteps: Push to GitHub → Connect to platform → Deploy"
-    },
-    "General Engineering": {
-        "What is the eligibility criteria for B.Tech admission?": "Candidates must have passed 10+2 with Physics, Chemistry, and Mathematics with a minimum of 60% aggregate marks from a recognized board.",
-        
-        "What is the duration of an engineering degree?": "A Bachelor of Technology (B.Tech) degree typically takes 4 years to complete, divided into 8 semesters.",
-        
-        "Which engineering branch has the highest scope?": "Computer Science, Artificial Intelligence, Data Science, and Electronics have high scope currently. However, the best branch depends on your interests and market trends.",
-        
-        "What subjects are common in the first year of engineering?": "Common first-year subjects include Engineering Mathematics, Physics, Chemistry, Basic Electrical Engineering, Engineering Mechanics, Programming in C, and Engineering Graphics.",
-        
-        "What programming languages do engineering students learn?": "Students typically learn C, C++, Java, Python, MATLAB, and web technologies like HTML, CSS, and JavaScript depending on their branch.",
-        
-        "What is the difference between Computer Science and Information Technology?": "Computer Science focuses on software development, algorithms, and theory. Information Technology emphasizes application of technology, networks, and database management.",
-        
-        "Can I switch engineering branches after the first year?": "Many colleges allow branch change based on first-year performance, usually requiring a high CGPA (typically 9.0+). Rules vary by institution.",
-        
-        "What are major job opportunities after engineering?": "Software Engineer, Data Analyst, Mechanical Engineer, Civil Engineer, Consultant, Research Scientist, Product Manager, and entrepreneurship opportunities.",
-        
-        "What is the role of internships in engineering?": "Internships provide practical experience, industry exposure, skill development, and often lead to pre-placement offers (PPOs). They are crucial for career development.",
-        
-        "Is engineering difficult to study?": "Engineering requires dedication and consistent effort. With proper time management, interest in the subject, and regular practice, it becomes manageable and rewarding."
     }
 }
